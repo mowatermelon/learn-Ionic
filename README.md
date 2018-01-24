@@ -50,7 +50,6 @@ npm run clean
 #构建网页项目
 npm run build
 
-
 #打包app项目
 npm run ionic:build
 
