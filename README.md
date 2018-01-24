@@ -52,7 +52,7 @@ npm run build
 
 
 #打包app项目
-npm run clean
+npm run ionic:build
 
 #测试文件中代码是否符合规范
 npm run lint
