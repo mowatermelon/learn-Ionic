@@ -21,6 +21,7 @@
   - list
   - menu
   - navigation
+  - slide
   - segment
   - tab
 
