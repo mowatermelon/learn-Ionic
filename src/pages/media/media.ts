@@ -28,6 +28,7 @@ export class MediaPage {
     }
   ];
 
+  //Media-slide相关事件
   selSkip() {
     console.log('Skip clicked');
   }
@@ -35,4 +36,26 @@ export class MediaPage {
   selContinue() {
     console.log('Continue clicked');
   }
+
+  //Media-card相关事件
+  selCardList(){
+    console.log('Card-List clicked');
+  }
+
+  selStart(){
+    console.log('Start clicked');
+  }
+
+  selFabLike(){
+    console.log('Fab-Like clicked');
+  }
+
+  selLike(){
+    console.log('Like clicked');
+  }
+
+  selCommit(){
+    console.log('Commit clicked');
+  }
+
 }
