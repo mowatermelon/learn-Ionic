@@ -32,4 +32,63 @@ page-media {
         color: #000000;
       }
     }
+
+    ion-card.adv-map p {
+      font-size: 0.7em !important;
+    }
+
+    button[fab].fab-map {
+      top: calc(100% - 20px);
+      z-index: 50;
+    }
+
+    .item-bold {
+      font-weight: bold;
+    }
+
+    .social-cards ion-col {
+      padding: 0;
+    }
+
+    ion-card .advanced-weather-tabs tabbar {
+      height: 100px;
+    }
+
+    ion-card .advanced-weather-tabs tabbar a span.tab-button-text {
+      text-transform: uppercase;
+    }
+
+    .cards-bg tab-highlight {
+      background-color: #fff !important;
+      top: 0;
+    }
+
+    ion-card.cards-list-demo ion-card-header {
+      color: map-get($colors, primary);
+    }
+
+    ion-card.showTitle {
+      position: relative;
+      text-align: center;
+      .card-title {
+        position: absolute;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-shadow:2px 3px 3px #ff6a6a;
+      }
+
+      .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        top: 52%;
+        width: 100%;
+        color: #fff;
+        text-shadow:2px 3px 3px #ff6a6a;
+      }
+    }
+
+
 }
