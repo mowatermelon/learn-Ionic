@@ -18,6 +18,7 @@
   - cards
   - fabs
   - grid
+  - icon
   - list
   - menu
   - navigation
