@@ -27,4 +27,12 @@ export class MediaPage {
       image: "assets/img/ica-slidebox-img-3.png",
     }
   ];
+
+  selSkip() {
+    console.log('Skip clicked');
+  }
+
+  selContinue() {
+    console.log('Continue clicked');
+  }
 }
