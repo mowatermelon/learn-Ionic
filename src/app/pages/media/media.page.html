@@ -1,0 +1,358 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Media
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2 padding>Welcome to Ionic Media!</h2>
+  <!--                                                                                    card-group-->
+  <ion-list>
+    <ion-list-header>
+      <h1>card</h1>
+    </ion-list-header>
+    <ion-item>
+      <ion-card>
+        <ion-card-header>
+          card标题默认样式
+        </ion-card-header>
+        <ion-card-content>
+          <p>card-content默认文本样式，card-content默认文本样式</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="cards-list-demo">
+        <ion-card-header>
+          card标题默认样式
+        </ion-card-header>
+
+        <ion-list>
+          <ion-item (click)="selCardList()">
+            <ion-icon name='cart' item-start></ion-icon>
+            card-list-1
+          </ion-item>
+
+          <ion-item (click)="selCardList()">
+            <ion-icon name='medical' item-start></ion-icon>
+            card-list-2
+          </ion-item>
+
+          <ion-item (click)="selCardList()">
+            <ion-icon name='cafe' item-start></ion-icon>
+            card-list-3
+          </ion-item>
+
+        </ion-list>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="showTitle">
+        <ion-card-header>
+          浮动图片之上居中显示文本
+        </ion-card-header>
+        <img src="https://avatars1.githubusercontent.com/u/18508817">
+        <div class="card-title">card-title文本</div>
+        <div class="card-subtitle">card-subtitle文本</div>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="adv-map">
+        <ion-item>
+          <ion-icon color="primary" large item-start name='rainy'></ion-icon>
+          <h2>默认的card-标题</h2>
+          <p>默认的card-副标题，默认的card-副标题</p>
+        </ion-item>
+        <img src="https://avatars1.githubusercontent.com/u/18508817">
+        <ion-item>
+          <ion-icon large item-start name='umbrella'></ion-icon>
+          <h2>默认的card-标题</h2>
+          <p>默认的card-副标题，默认的card-副标题</p>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="adv-map">
+        <ion-card-header>
+          card标题默认样式
+        </ion-card-header>
+        <ion-item>
+          <ion-icon color="primary" large item-start name='rainy'></ion-icon>
+          <h2>默认的card-标题</h2>
+          <p>默认的card-副标题，默认的card-副标题</p>
+        </ion-item>
+        <img src="https://avatars1.githubusercontent.com/u/18508817">
+        <ion-item>
+          <ion-icon large item-start name='umbrella'></ion-icon>
+          <h2>默认的card-标题</h2>
+          <p>默认的card-副标题，默认的card-副标题</p>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="adv-map">
+        <ion-item>
+          <ion-icon color="bright" large item-start name='sunny'></ion-icon>
+          <h2>图片内联的card-标题</h2>
+          <p>图片内联的card-副标题，图片内联的card-副标题</p>
+        </ion-item>
+        <ion-item>
+          <img src="https://avatars1.githubusercontent.com/u/18508817">
+        </ion-item>
+        <ion-item>
+          <ion-icon large item-start name='cloud'></ion-icon>
+          <h2>图片内联的card-标题</h2>
+          <p>图片内联的card-副标题，图片内联的card-副标题</p>
+        </ion-item>
+        <ion-item actions>
+          <span ion-text item-start color="secondary" class="item-bold">事件文本1</span>
+          <span ion-text item-start color="subtle">(事件文本2)</span>
+          <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
+            <ion-icon name='navigate'></ion-icon>
+            事件按钮
+          </ion-button>
+        </ion-item>
+
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="adv-map">
+        <ion-item>
+          <ion-icon large item-start name='camera'></ion-icon>
+          <h2>有浮动fab的card-标题</h2>
+          <p>有浮动fab的card-副标题，有浮动fab的card-副标题</p>
+        </ion-item>
+        <div style="position: relative">
+          <img src="https://avatars1.githubusercontent.com/u/18508817">
+
+          <ion-fab right top>
+            <ion-fab-button class="fab-map" (click)="selFabLike()">
+              <ion-icon name="heart"></ion-icon>
+            </ion-fab-button>
+          </ion-fab>
+        </div>
+        <ion-item>
+          <ion-icon large item-start name='bus'></ion-icon>
+          <h2>有浮动fab的card-标题</h2>
+          <p>有浮动fab的card-副标题，有浮动fab的card-副标题</p>
+        </ion-item>
+        <ion-item actions>
+          <span ion-text item-start color="secondary" class="item-bold">事件文本1</span>
+          <span ion-text item-start color="subtle">(事件文本2)</span>
+          <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
+            <ion-icon name='navigate'></ion-icon>
+            事件按钮
+          </ion-button>
+        </ion-item>
+      </ion-card>
+    </ion-item>
+
+    <ion-list inset>
+      <ion-item>
+        <ion-card class="adv-map">
+          <ion-item>
+            <ion-icon large item-start name='navigate'></ion-icon>
+            <h2>inset-list中的card-标题</h2>
+            <p>inset-list中的card-副标题，inset-list中的card-副标题</p>
+          </ion-item>
+          <div style="position: relative">
+            <img src="https://avatars1.githubusercontent.com/u/18508817">
+
+            <ion-fab right top>
+              <ion-fab-button color="danger" class="fab-map" (click)="selFabLike()">
+                <ion-icon name="heart"></ion-icon>
+              </ion-fab-button>
+            </ion-fab>
+          </div>
+          <ion-item>
+            <ion-icon large item-start name='pin'></ion-icon>
+            <h2>inset-list中的card-标题</h2>
+            <p>inset-list中的card-副标题，inset-list中的card-副标题</p>
+          </ion-item>
+          <ion-item actions>
+            <span ion-text item-start color="secondary" class="item-bold">事件文本1</span>
+            <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
+              <ion-icon name='navigate'></ion-icon>
+              事件按钮
+            </ion-button>
+          </ion-item>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+
+    <ion-item class="social-cards">
+      <ion-card>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://avatars1.githubusercontent.com/u/18508817">
+          </ion-avatar>
+          <h2>有avatar(item-start)的card-标题</h2>
+          <p>有avatar(item-start)的card-副标题，有avatar(item-start)的card-副标题</p>
+        </ion-item>
+
+        <img src="https://avatars1.githubusercontent.com/u/18508817">
+
+        <ion-card-content>
+          <p>card-content默认文本样式，card-content默认文本样式</p>
+        </ion-card-content>
+
+        <ion-item>
+          <ion-avatar item-end>
+            <img src="https://avatars1.githubusercontent.com/u/18508817">
+          </ion-avatar>
+          <h2>有avatar(item-end)的card-标题</h2>
+          <p>有avatar(item-end)的card-副标题，有avatar(item-end)的card-副标题</p>
+        </ion-item>
+        <ion-row>
+          <ion-col>
+            <ion-button color="primary" clear small icon-start (click)="selLike()">
+              <ion-icon name='thumbs-up'></ion-icon>
+              点赞按钮
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="primary" clear small icon-start (click)="selCommit()">
+              <ion-icon name='text'></ion-icon>
+              评论按钮
+            </ion-button>
+          </ion-col>
+          <ion-col align-self-center text-center>
+            <ion-note>
+              note文本
+            </ion-note>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-card class="advanced-background">
+        <img src="https://avatars1.githubusercontent.com/u/18508817" />
+
+        <ion-item class="advanced-trans">
+          <p item-start>文本一</p>
+          <p item-end>文本二</p>
+        </ion-item>
+
+        <p class="advanced-background-title advanced-background-title-large">
+          <ion-icon name='moon'></ion-icon>
+          <span>23&deg;</span>
+        </p>
+
+        <!-- <ion-tabs color="light" class="advanced-weather-tabs" no-navbar>
+          <ion-tab color="light" tabTitle="Sun" tabIcon="sunny"></ion-tab>
+          <ion-tab tabTitle="Mon" tabIcon="snow"></ion-tab>
+          <ion-tab tabTitle="Tue" tabIcon="cloudy"></ion-tab>
+        </ion-tabs> -->
+      </ion-card>
+    </ion-item>
+
+  </ion-list>
+
+  <!--                                                                                    badges-group-->
+  <ion-list>
+    <ion-list-header>
+      <h1>badges</h1>
+    </ion-list-header>
+    <ion-item>
+      只有badge的效果(item-start)
+      <ion-badge item-start>954</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      只有badge的效果(item-end)
+      <ion-badge item-end>954</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="wine" color="primary"></ion-icon>
+      icon(默认)+badge(默认)
+      <ion-badge>260k</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="flash" color="primary"></ion-icon>
+      icon(item-start)+badge(item-start)
+      <ion-badge item-start>260k</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='heart' style="color: #d03e84"></ion-icon>
+      icon(item-start)+badge(item-end)
+      <ion-badge item-end>954</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="cafe" item-end color="bright"></ion-icon>
+      icon(item-end)+badge(item-start)
+      <ion-badge item-start>260k</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='map' item-end color="secondary"></ion-icon>
+      icon(item-end)+badge(item-end)
+      <ion-badge item-end>954</ion-badge>
+    </ion-item>
+
+  </ion-list>
+
+  <!--                                                                                    silde-group-->
+  <ion-list>
+    <ion-list-header>
+      <h1>silde</h1>
+    </ion-list-header>
+    <ion-list>
+      <ion-list-header>默认是不显示的分页小圆点</ion-list-header>
+      <ion-item>
+        <ion-slides>
+          <ion-slide *ngFor="let slide of slides">
+            <ion-toolbar>
+              <ion-buttons end>
+                <ion-button color="primary">Skip</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+            <img src="https://avatars1.githubusercontent.com/u/18508817" class="slide-image" />
+            <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+            <!-- <p [innerHTML]="slide.description"></p> -->
+          </ion-slide>
+        </ion-slides>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>设置了pager，文本下面会出现swiper-pagination-bullet</ion-list-header>
+      <ion-item>
+        <ion-slides pager>
+          <ion-slide *ngFor="let slide of slides">
+            <ion-toolbar>
+              <ion-buttons end>
+                <ion-button color="primary" (click)="selSkip()">Skip</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+            <img src="https://avatars1.githubusercontent.com/u/18508817" class="slide-image" />
+            <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+            <!-- <p [innerHTML]="slide.description"></p> -->
+          </ion-slide>
+          <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+            <img src="https://avatars1.githubusercontent.com/u/18508817" class="slide-image" />
+            <h2 class="slide-title">Ready to Play?</h2>
+            <ion-button large clear icon-end color="primary" (click)="selContinue()">
+              Continue
+              <ion-icon name="arrow-forward"></ion-icon>
+            </ion-button>
+          </ion-slide>
+        </ion-slides>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>

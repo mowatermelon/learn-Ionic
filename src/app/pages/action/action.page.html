@@ -1,0 +1,194 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Action
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-router-outlet main></ion-router-outlet>
+
+<ion-menu side="start" menuId="melon" _contentId="inner">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Start Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-menu side="start" menuId="custom" class="my-custom-menu">
+  <ion-header>
+    <ion-toolbar color="tertiary">
+      <ion-title>Custom Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-menu side="end" type="push">
+  <ion-header>
+    <ion-toolbar color="danger">
+      <ion-title>End Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content>
+  <h2 padding>Welcome to Ionic Action!</h2>
+  <ion-list>
+    <ion-list-header>Menu Action</ion-list-header>
+    <ion-item (click)="openFirst()">
+      打开抽屉列表
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Alert Action</ion-list-header>
+    <ion-item (click)="presentAlert()">
+      <ion-label>触发基础弹窗</ion-label>
+      <ion-note item-end>Alert</ion-note>
+    </ion-item>
+    <ion-item (click)="presentAlertMultipleButtons()">
+      <ion-label>触发有多个按钮的弹窗</ion-label>
+      <ion-note item-end>Alert</ion-note>
+    </ion-item>
+    <ion-item (click)="presentAlertConfirm()">
+      <ion-label>触发确认弹窗</ion-label>
+      <ion-note item-end>Alert</ion-note>
+    </ion-item>
+    <ion-item (click)="presentAlertPrompt()">
+      <ion-label>触发包含输入框的弹窗</ion-label>
+      <ion-note item-end>Alert</ion-note>
+    </ion-item>
+    <ion-item (click)="presentAlertRadio()">
+      <ion-label>触发包含单选框的弹窗</ion-label>
+      <ion-note item-end>Alert</ion-note>
+    </ion-item>
+    <ion-item (click)="presentAlertCheckbox()">
+      <ion-label>触发包含复选框的弹窗</ion-label>
+      <ion-note item-end>Alert</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Popover Action</ion-list-header>
+    <ion-item (click)="presentPopover()">
+      presentPopover
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Loading Action</ion-list-header>
+    <ion-item (click)="presentLoading()">
+      显示进度的加载提示框
+    </ion-item>
+    <ion-item (click)="presentLoadingWithOptions()">
+      显示自定义的加载提示框
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
+    <ion-reorder-group>
+      <ion-list-header>Reorder Action</ion-list-header>
+      <ion-item>
+        <ion-label>
+          Item
+        </ion-label>
+        <ion-reorder slot="start"></ion-reorder>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Item
+        </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
+      <ion-list-header>Back Action</ion-list-header>
+      <!-- Default back button -->
+      <ion-item>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-item>
+
+      <!-- Back button with a default href -->
+      <ion-item>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/Media"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-item>
+
+      <!-- Back button with custom text and icon -->
+      <ion-item>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button [text]="buttonText" [icon]="buttonIcon">
+            </ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-item>
+
+      <!-- Back button with no text and custom icon -->
+      <ion-item>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-back-button text="" icon="add"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-item>
+
+      <!-- Danger back button next to a menu button -->
+      <ion-buttons>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+            <ion-back-button color="danger"></ion-back-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-buttons>
+  </ion-list>
+</ion-content>
