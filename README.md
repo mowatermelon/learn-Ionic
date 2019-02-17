@@ -5,39 +5,42 @@
 ## 学习分类
 
 - form
-  - input
-  - radio
-  - checkbox
-  - select
-  - datetime
-  - range
-  - toggle
+  - [x]  input
+  - [x]  radio
+  - [x] checkbox
+  - [x] select
+  - [x] datetime
+  - [x] range
+  - [x] toggle
 
 - media
-  - badges
-  - cards
-  - fabs
-  - grid
-  - icon
-  - list
-  - menu
-  - navigation
-  - slide
-  - segment
-  - tab
+  - [x] badges
+  - [x] cards
+  - [x] fabs
+  - [x] grid
+  - [x] icon
+  - [x] list
+  - [x] menu
+  - [x] navigation
+  - [x] slide
+  - [x] segment
+  - [x] tab
 
 - action
 
-  - action-sheets
-  - alert
-  - button
-  - gesture
-  - loading
-  - modal
-  - popover
-  - searchbar
-  - toast
-  - toolbar
+  - [ ] menu
+  - [x] alert
+  - [ ] popover
+  - [x] toast
+  - [x] loading
+  - [x] reorder
+  - [x] back-button
+  - [x] toolbar
+  - [x] searchbar
+  - [x] button
+  - [x] modal
+  - [ ] action-sheets
+  - [ ] gesture
 
 ## 运行前置
 
@@ -47,10 +50,10 @@
 
 ```bash
 #Window 和 Linux 上打开命令行工具执行以下命令：
-$ npm install -g ionic
+$ npm i -g ionic
 
 #Mac 系统上使用以下命令：
-sudo npm install -g ionic
+sudo npm i -g ionic
 ```
 
 提示: `IOS`需要在`Mac Os X.` 和`Xcode`环境下面安装使用。
