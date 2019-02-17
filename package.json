@@ -1,8 +1,8 @@
 {
   "name": "water",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "mowatermelon",
+  "homepage": "https://github.com/mowatermelon/learn-Ionic",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
