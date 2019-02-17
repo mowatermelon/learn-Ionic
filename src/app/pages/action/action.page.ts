@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuController, AlertController, PopoverController, LoadingController } from '@ionic/angular';
+import { MenuController, AlertController, PopoverController, LoadingController, ToastController } from '@ionic/angular';
 
 const { log } = console;
 
@@ -9,7 +9,13 @@ const { log } = console;
   styleUrls: ['action.page.scss']
 })
 export class ActionPage {
-  constructor(public menu: MenuController, public alertController: AlertController, public popoverController: PopoverController, public loadingController: LoadingController) { }
+  constructor(
+    public menu: MenuController,
+    public alertController: AlertController,
+    public popoverController: PopoverController,
+    public loadingController: LoadingController,
+    public toastController: ToastController) { }
+
 
   openFirst() {
     const _menu = this.menu;
@@ -312,4 +318,23 @@ export class ActionPage {
     });
     return await loading.present();
   }
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: 'Your settings have been saved.',
+      duration: 2000
+    });
+    toast.present();
+  }
+
+  async presentToastWithOptions() {
+    const toast = await this.toastController.create({
+      message: 'Click to Close',
+      showCloseButton: true,
+      position: 'top',
+      closeButtonText: 'Done'
+    });
+    toast.present();
+  }
+
 }

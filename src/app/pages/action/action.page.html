@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-router-outlet main></ion-router-outlet>
+<!-- <ion-router-outlet main></ion-router-outlet>
 
 <ion-menu side="start" menuId="melon" _contentId="inner">
   <ion-header>
@@ -67,7 +67,7 @@
       打开抽屉列表
     </ion-item>
   </ion-list>
-</ion-content>
+</ion-content> -->
 
 <ion-content>
   <ion-list>
@@ -111,6 +111,18 @@
 
 <ion-content>
   <ion-list>
+    <ion-list-header>Toast Action</ion-list-header>
+    <ion-item (click)="presentToast()">
+      显示进度的轻度提示框
+    </ion-item>
+    <ion-item (click)="presentToastWithOptions()">
+      显示自定义的轻度提示框
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
     <ion-list-header>Loading Action</ion-list-header>
     <ion-item (click)="presentLoading()">
       显示进度的加载提示框
@@ -143,52 +155,67 @@
 
 <ion-content>
   <ion-list>
-      <ion-list-header>Back Action</ion-list-header>
-      <!-- Default back button -->
-      <ion-item>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button></ion-back-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-item>
+    <ion-list-header>Search Action</ion-list-header>
+    <!-- Default Searchbar -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
 
-      <!-- Back button with a default href -->
-      <ion-item>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button defaultHref="tabs/Media"></ion-back-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-item>
+    <!-- Searchbar with danger color -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar color="danger"></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
 
-      <!-- Back button with custom text and icon -->
-      <ion-item>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button [text]="buttonText" [icon]="buttonIcon">
-            </ion-back-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-item>
+    <!-- Searchbar with value -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar value="Ionic"></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
 
-      <!-- Back button with no text and custom icon -->
-      <ion-item>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button text="" icon="add"></ion-back-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-item>
+    <!-- Searchbar with telephone type -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar type="tel"></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
 
-      <!-- Danger back button next to a menu button -->
-      <ion-buttons>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-            <ion-back-button color="danger"></ion-back-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-buttons>
+    <!-- Searchbar with a cancel button and custom cancel button text -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar showCancelButton cancelButtonText="Custom Cancel"></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
+
+    <!-- Searchbar with a custom debounce -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar debounce="500"></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
+
+    <!-- Animated Searchbar -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar animated></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
+
+    <!-- Searchbar with a placeholder -->
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar placeholder="Filter Schedules"></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
+    <ion-item>
+      <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+    </ion-item>
+
   </ion-list>
 </ion-content>
