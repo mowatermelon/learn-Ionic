@@ -31,6 +31,13 @@ after_script:
   - sudo apt-get update
   - sudo apt-get install tree
   - tree -L 2
+  - cd ./docs
+  - git init
+  - git config user.name "mowatermelon"
+  - git config user.email "neefoxmo@gmail.com"
+  - git add .
+  - git commit -m "Update docs by travis"
+  - git push --force --quiet "https://${GH_TOKEN}@${MELON_REF}" master:master
 
 branches:
   only:
