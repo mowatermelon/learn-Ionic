@@ -15,7 +15,7 @@ install:
 script:
   # excute some script for build project
   # build project
-  - npm run start
+  - npm run build
 
 # after_success:
   # do something after excute script success
