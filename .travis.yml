@@ -27,7 +27,6 @@ script:
 
 after_script:
   # do something after excute script
-  - ls
   - sudo apt-get update
   - sudo apt-get install tree
   - tree -L 2
