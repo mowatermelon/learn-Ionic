@@ -28,11 +28,11 @@ script:
 after_script:
   # do something after excute script
 
-branches:
-  only:
-    # confirm to keep only the corresponding braches monitored
-    - master
-env:
- global:
-   # add some global parameters
-   - MELON_REF: github.com/mowatermelon/learn-Ionic.git
+# branches:
+#   only:
+#     # confirm to keep only the corresponding braches monitored
+#     - master
+# env:
+#  global:
+#    # add some global parameters
+#    - MELON_REF: github.com/mowatermelon/learn-Ionic.git
