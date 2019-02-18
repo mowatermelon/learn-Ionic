@@ -3,7 +3,7 @@ node_js: stable
 
 # before_install:
   # do something before install
-  - npm install ionic -g
+  - "npm install ionic -g"
 
 # # install:
 #   # do something for install
