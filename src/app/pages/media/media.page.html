@@ -31,17 +31,22 @@
         </ion-card-header>
 
         <ion-list>
-          <ion-item (click)="selCardList()">
+          <!-- <ion-item (click)="selCardList()">
+            <ion-icon name='cart' item-start></ion-icon>
+            card-list-0
+          </ion-item> -->
+
+          <ion-item>
             <ion-icon name='cart' item-start></ion-icon>
             card-list-1
           </ion-item>
 
-          <ion-item (click)="selCardList()">
+          <ion-item>
             <ion-icon name='medical' item-start></ion-icon>
             card-list-2
           </ion-item>
 
-          <ion-item (click)="selCardList()">
+          <ion-item>
             <ion-icon name='cafe' item-start></ion-icon>
             card-list-3
           </ion-item>
@@ -114,10 +119,10 @@
         <ion-item actions>
           <span ion-text item-start color="secondary" class="item-bold">事件文本1</span>
           <span ion-text item-start color="subtle">(事件文本2)</span>
-          <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
+          <!-- <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
             <ion-icon name='navigate'></ion-icon>
             事件按钮
-          </ion-button>
+          </ion-button> -->
         </ion-item>
 
       </ion-card>
@@ -134,7 +139,10 @@
           <img src="https://avatars1.githubusercontent.com/u/18508817">
 
           <ion-fab right top>
-            <ion-fab-button class="fab-map" (click)="selFabLike()">
+            <!-- <ion-fab-button class="fab-map" (click)="selFabLike()">
+              <ion-icon name="heart"></ion-icon>
+            </ion-fab-button> -->
+            <ion-fab-button class="fab-map">
               <ion-icon name="heart"></ion-icon>
             </ion-fab-button>
           </ion-fab>
@@ -147,10 +155,10 @@
         <ion-item actions>
           <span ion-text item-start color="secondary" class="item-bold">事件文本1</span>
           <span ion-text item-start color="subtle">(事件文本2)</span>
-          <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
+          <!-- <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
             <ion-icon name='navigate'></ion-icon>
             事件按钮
-          </ion-button>
+          </ion-button> -->
         </ion-item>
       </ion-card>
     </ion-item>
@@ -167,7 +175,10 @@
             <img src="https://avatars1.githubusercontent.com/u/18508817">
 
             <ion-fab right top>
-              <ion-fab-button color="danger" class="fab-map" (click)="selFabLike()">
+              <!-- <ion-fab-button color="danger" class="fab-map" (click)="selFabLike()">
+                <ion-icon name="heart"></ion-icon>
+              </ion-fab-button> -->
+              <ion-fab-button color="danger" class="fab-map">
                 <ion-icon name="heart"></ion-icon>
               </ion-fab-button>
             </ion-fab>
@@ -179,10 +190,10 @@
           </ion-item>
           <ion-item actions>
             <span ion-text item-start color="secondary" class="item-bold">事件文本1</span>
-            <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
+            <!-- <ion-button color="primary" (click)="selStart()" clear item-end icon-start>
               <ion-icon name='navigate'></ion-icon>
               事件按钮
-            </ion-button>
+            </ion-button> -->
           </ion-item>
         </ion-card>
       </ion-item>
@@ -214,13 +225,21 @@
         </ion-item>
         <ion-row>
           <ion-col>
-            <ion-button color="primary" clear small icon-start (click)="selLike()">
+            <!-- <ion-button color="primary" clear small icon-start (click)="selLike()">
+              <ion-icon name='thumbs-up'></ion-icon>
+              点赞按钮
+            </ion-button> -->
+            <ion-button color="primary" clear small icon-start>
               <ion-icon name='thumbs-up'></ion-icon>
               点赞按钮
             </ion-button>
           </ion-col>
           <ion-col>
-            <ion-button color="primary" clear small icon-start (click)="selCommit()">
+            <!-- <ion-button color="primary" clear small icon-start (click)="selCommit()">
+              <ion-icon name='text'></ion-icon>
+              评论按钮
+            </ion-button> -->
+            <ion-button color="primary" clear small icon-start>
               <ion-icon name='text'></ion-icon>
               评论按钮
             </ion-button>
@@ -312,7 +331,7 @@
     <ion-list>
       <ion-list-header>默认是不显示的分页小圆点</ion-list-header>
       <ion-item>
-        <ion-slides>
+        <!-- <ion-slides>
           <ion-slide *ngFor="let slide of slides">
             <ion-toolbar>
               <ion-buttons end>
@@ -321,9 +340,9 @@
             </ion-toolbar>
             <img src="https://avatars1.githubusercontent.com/u/18508817" class="slide-image" />
             <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-            <!-- <p [innerHTML]="slide.description"></p> -->
+            <p [innerHTML]="slide.description"></p>
           </ion-slide>
-        </ion-slides>
+        </ion-slides> -->
       </ion-item>
     </ion-list>
 
@@ -331,7 +350,7 @@
       <ion-list-header>设置了pager，文本下面会出现swiper-pagination-bullet</ion-list-header>
       <ion-item>
         <ion-slides pager>
-          <ion-slide *ngFor="let slide of slides">
+          <!-- <ion-slide *ngFor="let slide of slides">
             <ion-toolbar>
               <ion-buttons end>
                 <ion-button color="primary" (click)="selSkip()">Skip</ion-button>
@@ -339,14 +358,18 @@
             </ion-toolbar>
             <img src="https://avatars1.githubusercontent.com/u/18508817" class="slide-image" />
             <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-            <!-- <p [innerHTML]="slide.description"></p> -->
-          </ion-slide>
+            <p [innerHTML]="slide.description"></p>
+          </ion-slide> -->
           <ion-slide>
             <ion-toolbar>
             </ion-toolbar>
             <img src="https://avatars1.githubusercontent.com/u/18508817" class="slide-image" />
             <h2 class="slide-title">Ready to Play?</h2>
-            <ion-button large clear icon-end color="primary" (click)="selContinue()">
+            <!-- <ion-button large clear icon-end color="primary" (click)="selContinue()">
+              Continue
+              <ion-icon name="arrow-forward"></ion-icon>
+            </ion-button> -->
+            <ion-button large clear icon-end color="primary">
               Continue
               <ion-icon name="arrow-forward"></ion-icon>
             </ion-button>
