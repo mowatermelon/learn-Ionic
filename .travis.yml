@@ -1,7 +1,7 @@
 language: node_js
 node_js: stable
 
-# before_install:
+before_install:
   # do something before install
   - "npm install ionic -g"
 
