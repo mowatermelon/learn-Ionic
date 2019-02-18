@@ -42,7 +42,7 @@ after_script:
 branches:
   only:
     # confirm to keep only the corresponding braches monitored
-    - master
+    - ng7
 env:
  global:
    # add some global parameters
