@@ -7,7 +7,7 @@ node_js: stable
 
 # install:
   # do something for install
-  - "yarn"
+  - "npm i"
 
 before_script:
   # do something before excute script
@@ -15,7 +15,7 @@ before_script:
 script:
   # excute some script for build project
   # build project
-  - "yarn start"
+  - "npm run start"
 
 # after_success:
   # do something after excute script success
