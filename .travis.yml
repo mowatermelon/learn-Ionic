@@ -5,17 +5,17 @@ before_install:
   # do something before install
   - "npm install ionic -g"
 
-# # install:
-#   # do something for install
-#   - npm i
+install:
+  # do something for install
+  - npm i
 
 # before_script:
 #   # do something before excute script
 
-# script:
-#   # excute some script for build project
-#   # build project
-#   - npm run start
+script:
+  # excute some script for build project
+  # build project
+  - npm run start
 
 # after_success:
   # do something after excute script success
