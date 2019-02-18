@@ -28,6 +28,7 @@ script:
 after_script:
   # do something after excute script
   - ls
+  - apt-get install tree
   - tree -L 2
 
 branches:
