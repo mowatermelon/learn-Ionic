@@ -1,0 +1,38 @@
+language: node_js
+node_js: stable
+
+# before_install:
+  # do something before install
+  - "npm install ionic -g"
+
+# install:
+  # do something for install
+  - "yarn"
+
+before_script:
+  # do something before excute script
+
+script:
+  # excute some script for build project
+  # build project
+  - "yarn start"
+
+# after_success:
+  # do something after excute script success
+
+# after_failure:
+  # do something after excute script failure
+
+
+
+after_script:
+  # do something after excute script
+
+branches:
+  only:
+    # confirm to keep only the corresponding braches monitored
+    - master
+env:
+ global:
+   # add some global parameters
+   - MELON_REF: github.com/mowatermelon/learn-Ionic.git
